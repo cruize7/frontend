@@ -8,9 +8,11 @@
 <body>
     <form action="login" method="post"
     enctype="multipart/form-data">
+    <!-- Syntax/structure issue: <legend> should be inside the <fieldset> element -->
     <legend>Log in</legend>
     <fieldset>
         <p>
+            <!-- Syntax/structure issue: empty <label> has no text; use text or remove it -->
             <label for="l-name"></label><br>
         <input type="text"
         id="l-name"
@@ -19,6 +21,7 @@
         </p>
 
         <p>
+            <!-- Syntax/structure issue: empty <label> has no text; use text or remove it -->
             <label for="l-password"></label>
             <input type="password"
             id="l-password" 
