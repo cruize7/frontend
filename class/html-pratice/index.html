@@ -51,6 +51,7 @@
         <h2 id="Contact">Contact us</h2>
 
         <!-- email and phone -->
+         <!-- ERROR: invalid URL scheme; 'mailo:' should be 'mailto:' -->
          <a href="mailo:hello@gmail.com">Email us</a><br>
          <a href="tel:+23456789000">Call us</a>
 
@@ -77,6 +78,7 @@
             <dd>The language that style a web page</dd>
           </dl>
 
+          <!-- ERROR: <li> elements are outside the <ul> parent container -->
           <ul>
             <li>Fruit</li>
           </ul>
@@ -89,6 +91,7 @@
           <li>egu leaf</li>
 
           <!-- Tables -->
+           <!-- ERROR: stray character after <table> opening tag -->
            <table>'
             <table border="1">
                 <caption>class timetable</caption>
@@ -112,9 +115,13 @@
                     </tr>
                 </tbody>
            </table>
+
+           <!-- ERROR: <tr> is outside of any table -->
            <tr>
             <td colspan="3">Break time</td>
            </tr>
+
+           <!-- ERROR: nested table is malformed and duplicated -->
            <table>
             <table border=>
                 <tr>
@@ -142,6 +149,28 @@
                 </tr>
            </table>
 
+               <!-- CORRECTED : TABLE   -->
+               <table border="1">
+  <tr>
+    <td>Outer Cell 1</td>
+    <td>
+      <!-- Nested Table Starts Here -->
+      <table border="1">
+        <tr>
+          <th>Nested Header 1</th>
+          <th>Nested Header 2</th>
+        </tr>
+        <tr>
+          <td>Nested Data 1</td>
+          <td>Nested Data 2</td>
+        </tr>
+      </table>
+      <!-- Nested Table Ends Here -->
+    </td>
+  </tr>
+</table>
+
+
            <!-- Quotes and code -->
             <blockquote cite="class1.html/speech"> 
                 <p>The way to learn is to buid something</p>
@@ -160,6 +189,7 @@
 
 
              <!-- Sematic layout -->
+              <!-- ERROR: nested <body> tag inside existing <body> is invalid HTML -->
               <body>
                 <header>
                     <h1>My Tech Blog</h1>
