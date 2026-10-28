@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="login" method="post"
+    enctype="multipart/form-data">        
+    <fieldset>
+    <legend>Log in</legend>
+        <p>
+            <!-- Syntax/structure issue: empty <label> has no text; use text or remove it -->
+            <label for="l-name">Email address or number</label><br>
+        <input type="text"
+        id="l-name"
+        name="email adress or phone"
+        placeholder="Email address or number" required>
+        </p>
+
+        <p>
+            <!-- Syntax/structure issue: empty <label> has no text; use text or remove it -->
+            <label for="l-password">
+                Password
+            </label><br>
+            <input type="password"
+            id="l-password" 
+            placeholder="Password" required>
+            <br>
+            </p>
+
+            <button type="submit">Login</button>
+            <br>
+            <a href="exerciseregister.html">Create new account </a>
+    </fieldset>
+
+    </form>
+</body>
+</html>

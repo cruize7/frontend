@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="register" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Create your Account</legend>
+            <p>
+                <label for="r-name">Full name</label>
+                <br>
+                <input type="text" id="r-name" name="Fullname" required>
+            </p>
+
+            <!-- Syntax/structure issue: the <p> tag for the email field is not closed before the next <p> starts -->
+            <p>
+                <label for="r-email">Email</label>
+                <br>
+                <input type="email" id="r-email" required>
+            <p>
+                <label for="r-phone">Phone number</label>
+                <br>
+                <input type="tel" id="r-Phone" name="phonenumber" required>
+            </p>
+
+            <p>
+                <label for="r-pass">Password (minimum 8 charaters)</label><br>
+                <input type="password"
+                id="r-pass"
+                name="password"
+                minlength="8" required>
+            </p>
+
+            <p>
+                <label for="r-dob">Date of birth</label><br><input type="date"
+                id="r-dob"
+                name="dob" required>
+            </p>
+
+            <fieldset>
+                <legend>Gender</legend>
+                <input type="radio"
+                id="g-f" name="gender"
+                value="female" required>
+                <label for="g-f">Female</label>
+                <input type="radio"
+                id="g-m" name="geder"
+                value="male">
+                <label for="g-m">Male</label>
+            </fieldset>
+
+            <p>
+                <input type="checkbox"
+                id="r-terms" name="terms"
+                value="yes" required>
+                <label for="r-terms">I agree to the terms and conditions</label>
+            </p>
+            
+            <button type="submit">Register</button>
+            <br>
+            <a href="exerciselogin.html">Login</a>
+        </fieldset>
+
+    </form>
+</body>
+
+</html>
