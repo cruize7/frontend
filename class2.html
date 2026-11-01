@@ -3,9 +3,289 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Document</title> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <style> /* selectors : tagnames */
+    h1{
+        color: blue;
+        font-size: 14px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: 500;
+        text-align: center;
+        text-transform: capitalize;
+        text-decoration: underline;
+        letter-spacing: 3px;
+        word-spacing: 3px;
+    }
+    /* class selector */
+    .demo{
+        color: red;
+        
+    }
+    
+    #demo{
+        color: yellow;
+        background-color: black;
+     width: 100%;
+     min-width: 300px;
+     max-width: 400px;
+     height: 10vh;
+     min-height: ;
+     max-height: ;
+
+     /* padding space inside an element */
+     padding: 10px 0;
+     padding: 30px 0;
+     padding: 30px 0 50px 100px;
+    }
+    .list1{
+        color: yellow;
+        background-color: black;
+
+        margin: 50px;
+        margin: 50px 0;
+        margin: 30px 0 50px 100px;
+        
+        /* border radius */
+        margin: 30px auto;
+        border-radius: 30px;
+        border-radius: 10px 50px 0 100;
+
+        /* border */
+        border: 5px;
+        border-style: solid;
+        border-color: blue;
+        border-top: red solid 5px;
+    }
+    section{color: aquamarine;}
+
+    section div{
+        color: blueviolet;
+    }
+    .test{color: white;
+    background-color: black;}
+
+    .circle{
+        width: 20px;
+        height: 20px;
+        border: 5px cornflowerblue;
+        border-radius: 50px;
+        border-style: solid;
+        border-top: transparent;
+        border-bottom: transparent;
+    }
+    .box{
+        width: 200px;
+        height: 100px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px 0px  rgba(7, 1, 1, 0.306);
+        transition: 0.5s;
+    }
+    /* box hover */
+    .box:hover{
+        background-color: blue;
+        color: white;
+        border-radius: 20px;
+        box-shadow: -5px -5px 10px 0px rgba(0, 0, 0, 0.34);
+        width: 100%;
+
+    }
+    /* over flow */
+    .container1{
+        width: 200px;
+        height: 100px;
+        background: yellow;
+        overflow: hidden;
+        overflow: visible;
+        overflow: scroll;
+        overflow: auto;
+
+
+    }
+    /* excercise */
+    .card1{
+        width: 90%;
+        max-width: 400px;
+        background: white;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.313);
+        border-radius: 15px;
+        padding:100px 20px;
+        margin: 20px auto;
+        border-left: yellow solid 5px;
+        border-right: yellow solid 5px;
+    
+    }
+    .card1 .title{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .card1 a{
+        background: yellow;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 10px;
+        display: block;
+        margin: 20px 0;
+        width: fit-content;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        &:hover{
+            background: black;
+            color: white;
+        }
+    }
+
+    /* card 2 */
+    .card2 a{
+        display: inline;
+        
+    }
+    .card2 .link{
+        text-align: right;
+        padding: 20px 0 ;
+
+    }
+    .card3{
+        padding: 10px;
+        border: 0px;
+        overflow: hidden;
+
+    }
+    .card3 img{
+        border-radius: 15px 15px 0 0;
+    }
+    .d-none{
+        display: none;
+    }
+
+.container2{
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+    flex-direction: column;
+    flex-direction: row;
+    flex-direction: row-reverse;
+
+}
+/* cover */
+.cover{
+    width: 100%;
+    height: 100vh;
+    background-image: url(pic1.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+    </style>
 </head>
 <body>
+    
+    <div class="cover">
+        <h6>Welcome to my site</h6>
+    </div>
     <h1>Welcome to Class 2</h1>
+    <h1>Welcome to Class 2</h1>
+    <h1>Welcome to Class 2</h1>
+
+    <h2 class="demo2">Welcome to Class 2</h2>
+    <h2 class="demo">Welcome to Class 2</h2>
+
+    <p class="demo2"> Hello world</p>
+    <!-- h3 design, h4 different design -->
+     <h3>hello world</h3>
+     <h3>hello wordl</h3>
+
+     <h4 id="demo"> hello world</h4>
+     <h4 id="demo1"> hello world</h4>
+
+     <ul class="list1">
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+     </ul>
+
+     <ul>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+     </ul>
+
+     <p class="test">hello world</p>
+     <div class="test1">Hello world</div>
+
+     <!-- div for small container. section is for big conatiner -->
+
+     <section>
+        <div>Welcome</div>
+        <div>
+            name
+            <div>Usman</div>
+        </div>
+
+     </section>
+
+     <!-- example -->
+      <div class="circle"></div>
+
+
+      <!-- box-shadow -->
+       <div class="box">box shadow</div>
+
+       <div class="container1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis dolorem tenetur quod fugit libero. Natus pariatur, tenetur inventore nemo blanditiis eligendi eveniet voluptatibus quo, in error esse at magni consectetur.
+
+       </div>
+       <!-- excercise -->
+        <div class="card1">
+            <div class="tltle">card Title</div>
+            <div class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis porro nesciunt, consequatur officia quos, minima sunt architecto beatae unde quas nisi sapiente? Adipisci cum voluptatum consequuntur ipsa temporibus laboriosam repudiandae!</div>
+            <a href="">learn more</a>
+        </div>
+        <div class="card1 card2">
+            <div class="tltle">card Title</div>
+            <div class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis porro nesciunt, consequatur officia quos, minima sunt architecto beatae unde quas nisi sapiente? Adipisci cum voluptatum consequuntur ipsa temporibus laboriosam repudiandae!</div>
+            <div class="link"> 
+                <a href="">learn more</a>
+            </div>
+        </div>
+
+        <!-- card and img -->
+         <div class="card3 card1" >
+            <img width="100%" src ="pic1.png" alt="">
+            <div class="content">
+                <div class="Title">Card Title</div>
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, temporibus fugiat? Dolorum, a hic, neque esse reprehenderit deleniti ipsum saepe dolor ipsam rem quaerat repudiandae voluptatem est incidunt quas laudantium!</div>
+                <a href=""><i class="fa-solid fa-thumbs-up"></i></a>
+                <a href=""><i class="fa-solid fa-thumbs-down"></i></a>
+
+
+            </div>
+        </div>
+         
+<!-- icons -->
+ <a href=""><i class="fa-regular fa-house"></i></a>
+
+ <!-- dispaly -->
+  <b class="d-none"> hello world</b>
+  <div class="d-none"> hello world</div>
+
+  <div class="container2">
+    <div class="card1">
+            <div class="tltle">card Title</div>
+            <div class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis porro nesciunt, consequatur officia quos, minima sunt architecto beatae unde quas nisi sapiente? Adipisci cum voluptatum consequuntur ipsa temporibus laboriosam repudiandae!</div>
+            <a href="">learn more</a>
+        </div>
+        <div class="card1 card3">
+            <div class="tltle">card Title</div>
+            <div class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis porro nesciunt, consequatur officia quos, minima sunt architecto beatae unde quas nisi sapiente? Adipisci cum voluptatum consequuntur ipsa temporibus laboriosam repudiandae!</div>
+            <a href="">learn more</a>
+        </div>
+
+  </div>
 </body>
 </html>
