@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        .box{
+            background-color: rgb(7, 7, 41);
+            width: 100px;
+            height: 100px;
+            color:aliceblue;
+            transform: rotate(-45deg);
+            transform: rotateY(180deg);
+            transform: rotateX(180deg);
+            
+            transform: scale(0.3);
+            transform: scale(2,3);
+            transform: scale(0);
+
+            transform: translate(100px);
+            transform: translate(100px, 200px);
+            transform: translate(0px, 200px);
+            transform: translate(-150%);
+            transform: translate(0);
+            animation: ani1 5s  ;
+        }
+
+        @keyframes ani1{
+            0%{
+                background-color: rgb(7, 7, 41);
+            }
+            20%{
+                background-color: yellow;
+            }
+            50%{
+                background-color: green;
+            }
+            100%{
+                background-color: red
+            }
+        }
+        /* spinner */
+        .spinner{
+            width: 40px;
+            height: 40px;
+            border: 10px solid rgba(0, 0, 255, 0.114);
+            border-top: 10px solid blue;
+            border-radius: 50%;
+            animation: spin 2s infinite linear;
+        }
+        @keyframes spin {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- transform -->
+    <div class="box"> SOLOMON</div>
+    <!-- animation -->
+     <!--  -->
+    <div class="spinner"></div>
+
+    <!-- Whats CSS Position : their values  -->
+     <!--  create 3 different animations -->
+    
+</body>
+</html>
