@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .bg{
+            padding: 30px;
+            background:orange ;
+            animation: my-ani-1 5s 6;
+            animation: my-ani-1 5s infinite;
+        }
+        @keyframes my-ani-1 {
+            0%{background: red; border-radius: 0;}
+            20%{background: black; border-radius: 40px;}
+            70%{background: blue; border-radius: 20px;}
+            100%{background: pink; border-radius: 0;}
+        }
+        /* spinner */
+        .spinner{
+            border-radius: 50%;
+            border: 5px solid rgba(0, 0, 255, 0.209);
+            border-left-color:blue;
+            width: 30px;
+            height: 30px;
+            margin: 30px;
+            animation:spin 1s infinite linear
+        }
+        @keyframes spin {
+            100%{transform: rotate(360deg);}
+        }
+
+        .progress{
+            background: rgba(0, 0, 255, 0.222);
+            overflow: hidden;
+            border-radius: 5px;
+        }
+        .bar{
+            background: blue;
+            padding: 1px;
+            width: 0%;
+            animation: loader 4s infinite;
+        }
+        @keyframes loader {
+            100%{width: 100%;}
+        }
+
+        /* responsive Web Design */
+        .container{
+            background: orange;
+            padding: 15px;
+            font-size: 15px;
+            @media screen and (min-width:768px) {
+               padding: 30px; 
+               background: yellow;
+            }
+        }
+
+        /* header example  */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: blue;
+            color: #fff;
+            padding: 15px;
+            font-size: 13px;
+        }
+        header a{
+            color:#002;
+            text-decoration: none;
+            padding: 5px;
+            @media screen and (min-width:768px) {
+                color:#fff;
+            }
+        }
+        header nav{
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            background: #fff;
+            width:90%;
+            left:5%;
+            top: 40px;
+            height: 70%;
+            box-shadow: 0 0 12px 0 #80808045;
+            border-radius: 12px;
+            padding: 12px;
+            gap: 12px;
+            transform: translate(150%);
+            animation:nav 4s;
+            @media screen and (min-width:768px) {
+                flex-direction: row;
+                position: static;
+                background: transparent;
+                box-shadow: none;
+                width: fit-content;
+            }
+        }
+        header button{
+            background: transparent;
+            border:1px solid #fff;
+            font-size: 12px;
+            padding: 6px;
+            color:#fff;
+            display: block;
+             @media screen and (min-width:768px) {
+                display: none;
+            }
+
+        }
+
+        @keyframes nav {
+            100%{transform: translate(0);}
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2> Brand</h2>
+        <nav> 
+            <a href=""> Home</a>
+            <a href=""> Solutions</a>
+            <a href=""> partners </a>
+            <a href=""> Community</a>
+        </nav>
+        <button> MENU </button>
+    </header>
+    <div class="bg"></div>
+    <div class="spinner"></div>
+    <div class="progress">
+        <div class="bar"></div>
+    </div>
+
+    <!-- 
+        mobile : 0 - 450px
+        tablet : 451  - 1024px 
+        desktop and Laptops : 1024 > 
+
+        mobile : 0  - 768px 
+        tablets, laptop, desktop: 769 > 
+    -->
+
+    <div class="container"> Lorem, ipsum dolor.</div>
+</body>
+</html>
