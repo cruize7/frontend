@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .bg{
+            padding: 30px;
+            background-color: yellow
+            animation: my-ani-1 5s 6;
+            animation: my ani-1 5 infinite
+
+        }
+
+        @keyframes my-ani-1{
+            0% {background: red; border-radius: 0;}
+            20% {background: black; border-radius: 40px;}
+            70% {background: ;}
+        
+
+    }
+
+
+    /* spinner */
+    .spinner{
+        border-radius: 50%;
+        border: 5px solid rgb(20, 20, 36);
+        border-left: color blue ;
+        width: 30px;
+        height: 30px;
+        margin: 30px;
+        animation:spin 1s infinite linear
+    }
+    @keyframes spin {
+    100% {transform: rotate(360deg);}
+    }
+
+    .progress{
+        background: rgb(23, 13, 13);
+        overflow: hidden;
+        border-radius: 5px;
+
+    }
+
+    bar{
+        background: blue;
+        padding: 1px;
+        width: 0%;
+        animation: loader 4s infinite;
+    }
+
+    @keyframes loader{
+        100%{width: 100%;}
+    }
+
+
+    /* responsive web desgin */
+    .container{
+        background: orange;
+        padding: 30px;
+        font-size: 30px;
+        @media screen and {min-width: 768;}{
+            padding:30px
+        }
+    }
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="bg"></div>
+    <div class="spinner"></div>
+    <div class="progress"> <div class="bar"></div>
+
+    </div>
+    
+
+    <!-- mobile : 0-450px -->
+     <!-- tablet : 451 -1024px -->
+      <!-- desktop and laptop : 1024 
+       
+      mobile. 0- 769 
+      -->
+
+
+</body>
+</html>
