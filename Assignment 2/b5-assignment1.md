@@ -1,5 +1,6 @@
 # HTML, CSS Bootstrap 
 ## Assignment 1: Personal Profile Card
+_To be submited on Tuesday_
 Create a personal profile card using Bootstrap 5.
 ### Requirements
 
@@ -15,6 +16,7 @@ Unsplash](https://unsplash.com/s/photos/profile-card-design)
 ------------------------------------------------------------------------
 
 ## Assignment 2: Responsive Services Section
+_To be submited on Tuesday_
 
 Design a webpage section that displays at least four services offered by
 a business.
@@ -37,6 +39,8 @@ Unsplash](https://unsplash.com/s/photos/services-website-design)
 ------------------------------------------------------------------------
 
 ## Assignment 3: Student Registration Form
+_To be submited on Thursday_
+
 
 Create a student registration form using Bootstrap 5.
 
@@ -62,6 +66,7 @@ Unsplash](https://unsplash.com/s/photos/registration-form-web-design)
 
 ## Assignment 4: Business Landing Page
 Create a simple landing page for a business of your choice.
+_To be submited on Friday_
 ### Requirements
 
 1.  Create a navigation bar with:
@@ -83,6 +88,7 @@ Unsplash](https://unsplash.com/s/photos/business-website-landing-page)
 ------------------------------------------------------------------------
 
 ## Assignment 5: School Website -- Homepage
+_To be submited on Sunday_
 
 Design a simple homepage for a school using Bootstrap 5.
 
